@@ -11,7 +11,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #151515;
+    background-image: url(img/dev.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(30px);
     width: 100%;
     min-height: 100vh;
     padding-top: 2rem;
@@ -28,7 +31,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #151515;
+    background-color: #BDE038;
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -42,7 +45,7 @@ a {
     left: 0;
     height: 100%;
     width: 0%;
-    background-color: var(--color-green);
+    background-color: #486966;
 }
 
 #loading-text {
@@ -54,8 +57,8 @@ a {
 
 
 :root {
-    --color-green: #8FE20E;
-    --color-black: #202020;
+    --color-green: #3CA6A6;
+    --color-black: #486966;
     --color-white: #fafafa;
 }
 
@@ -64,7 +67,7 @@ a {
     border-radius: 20px;
     width: 95%;
     max-width: 400px;
-    background-color: #000;
+    background-color: #747F7F;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,10 +111,10 @@ a {
 }
 
 .img-user {
-    width: 50px;
+    width: 40px;
     height: 50px;
     border-radius: 8px;
-    border: 2px solid var(--color-green);
+    border: 2px solid #BDE038;
 }
 
 .name-user h1 {
@@ -138,6 +141,7 @@ a {
     animation: rotate 5s linear infinite;
 }
 
+
 /****************** WIDGET 2 */
 .widget2 {
     width: 100%;
@@ -161,7 +165,7 @@ a {
 }
 
 .destaque {
-    color: var(--color-green);
+    color: #BDE038;
     font-weight: bold;
     font-size: 1rem;
     padding-bottom: 0.3rem;
@@ -242,7 +246,7 @@ a {
 
 .tread {
     border-radius: 12px;
-    background-color: var(--color-black);
+    background-color: #BDE038;
     width: 50%;
     height: 100%;
     display: flex;
@@ -253,7 +257,7 @@ a {
     gap: 0.8rem;
 }
 
-.text-tread {
+.text-tread, .text-tread2 {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -262,21 +266,42 @@ a {
 
 .text-tread h1 {
     padding-bottom: 0.3rem;
-    color: var(--color-white);
+    color: #486966;
     font-weight: bold;
     font-size: 1rem;
 }
 
-.text-tread span {
-    color: #fafafab4;
+.text-tread2 h1 {
+    padding-bottom: 0.3rem;
+    color:#486966;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.text-tread  span {
+    color: #486966;
+    font-size: 0.8rem;
+}
+
+.text-tread2  span {
+    color: #486966;
     font-size: 0.8rem;
 }
 
 .img-tread {
     width: 100%;
     height: 100px;
-    background-image: url(/img/tread-skateboard.jpg);
+    background-image: url(img/1722626287466.webp);
     background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+.img-tread2 {
+    width: 100%;
+    height: 100px;
+    background-image: url(img/1722617936386.jpg);
+    background-position: left;
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 8px;
@@ -286,10 +311,13 @@ a {
     width: 50%;
 }
 
+.img-tread2 img {
+    width: 50%;
+}
+
 .redes-sociais {
     border-radius: 12px;
-    width: 50%;
-    height: 185px;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -313,8 +341,8 @@ a {
     color: var(--color-white);
 }
 
-.redes-sociais .tiktok:hover i {
-    color: #000;
+.redes-sociais .facebook:hover i {
+    color: #103778;
     transition: color 0.3s;
 }
 
@@ -337,12 +365,12 @@ a {
 .widget4 {
     width: 100%;
     height: 16%;
-    background-color: var(--color-green);
+    background-color: #BDE038;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-black);
+    color: #ffffff;
     padding: 1rem;
 }
 
@@ -363,7 +391,7 @@ a {
 .meu-site h1 {
     font-weight: bold;
     font-size: 1.2rem;
-    color: var(--color-black);
+    color: #ffffff;
 }
 
 /****************** WIDGET 5 */
@@ -412,7 +440,7 @@ a {
 }
 
 .widget6 span {
-    color: #fafafab4;
+    color: #BDE038;
     font-size: 1rem;
     padding-top: 1rem;
 }
